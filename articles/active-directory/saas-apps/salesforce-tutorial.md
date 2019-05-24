@@ -237,7 +237,7 @@ In this section, you enable Britta Simon to use Azure single sign-on by granting
 
 ### Create Salesforce test user
 
-In this section, a user called Britta Simon is created in Salesforce. Salesforce supports just-in-time provisioning, which is enabled by default. There is no action item for you in this section. If a user doesn't already exist in Salesforce, a new one is created when you attempt to access Salesforce. Salesforce also supports automatic user provisioning, you can find more details [here](salesforce-provisioning-tutorial.md) on how to configure automatic user provisioning.
+In this section, a user called Britta Simon is created in Salesforce. Salesforce supports just-in-time provisioning, which is not enabled by default. Salesforce also supports automatic user provisioning from Azure AD. You can find more details [here](salesforce-provisioning-tutorial.md) on how to configure automatic user provisioning.
 
 ### Test single sign-on
 
