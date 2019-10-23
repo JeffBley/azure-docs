@@ -42,9 +42,9 @@ If you have recently modified these settings or assigned the Guest Inviter role 
 
 Common errors include:
 
-### Invitee’s Admin has disallowed EmailVerified Users from being created in their tenant
+### Invitee’s Admin does not allow email verified users from being created in their tenant
 
-When inviting users whose organization is using Azure Active Directory, but where the specific user’s account does not exist (for example, the user does not exist in Azure AD contoso.com). The administrator of contoso.com may have a policy in place preventing users from being created. The user must check with their admin to determine if external users are allowed. The external user’s admin may need to allow Email Verified users in their domain (see this [article](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) on allowing Email Verified Users).
+When inviting users whose organization is using Azure Active Directory, but where the specific user’s account does not exist (for example, the user does not exist in Azure AD contoso.com). The administrator of contoso.com may have a policy in place preventing users from being created. The user must check with their admin to determine if external users are allowed. The external user’s admin may need to allow Email Verified users in their domain (see this [article](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) on allowing Email Verified Users). To prevent this issue from occurring, we recommend enabling one-time passcode authentication.  For more information on how to enable one-time passcode, see https://docs.microsoft.com/en-us/azure/active-directory/b2b/one-time-passcode.
 
 ![Error stating the tenant does not allow email verified users](media/troubleshoot/allow-email-verified-users.png)
 
@@ -52,7 +52,7 @@ When inviting users whose organization is using Azure Active Directory, but wher
 
 If you are using federation authentication and the user does not already exist in Azure Active Directory, the user cannot be invited.
 
-To resolve this issue, the external user’s admin must synchronize the user’s account to Azure Active Directory.
+To resolve this issue, the external user’s admin must synchronize the user’s account to Azure Active Directory or enable one-time passcode.
 
 ## How does ‘\#’, which is not normally a valid character, sync with Azure AD?
 
