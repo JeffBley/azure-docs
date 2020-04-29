@@ -107,7 +107,7 @@ In your environment, you should avoid the following configurations:
 
 - **Block access** - This configuration blocks your entire organization, which is definitely not a good idea.
 - **Require compliant device** - For users that have not enrolled their devices yet, this policy blocks all access including access to the Intune portal. If you are an administrator without an enrolled device, this policy blocks you from getting back into the Azure portal to change the policy.
-- **Require domain join** - This policy block access has also the potential to block access for all users in your organization if you don't have a domain-joined device yet.
+- **Require Hybrid Azure AD joined device** - This policy block access has also the potential to block access for all users in your organization if you don't have any Hybrid Azure AD joined devices yet.
 - **Require app protection policy** - This policy block access has also the potential to block access for all users in your organization if you don't have an Intune policy. If you are an administrator without a client application that has an Intune app protection policy, this policy blocks you from getting back into portals such as Intune and Azure.
 
 **For all users, all cloud apps, all device platforms:**
