@@ -30,7 +30,7 @@ Both policies work to automate the response to risk detections in your environme
 
 ## Prerequisites 
 
-If your organization wants to allow users to self-remediate when risks are detected, users must be registered for both self-service password reset and Azure Multi-Factor Authentication. We recommend [enabling the combined security information registration experience](../authentication/howto-registration-mfa-sspr-combined.md) for the best experience. Allowing users to self-remediate gets them back to a productive state more quickly without requiring administrator intervention. Administrators can still see these events and investigate them after the fact. 
+If your organization wants to allow users to self-remediate when risks are detected, Password Writeback must be enabled in Azure AD Connect (for hybrid organizations) and users must be registered for Azure Multi-Factor Authentication. We recommend [enabling the combined security information registration experience](../authentication/howto-registration-mfa-sspr-combined.md) for the best experience. Allowing users to self-remediate gets them back to a productive state more quickly without requiring administrator intervention. Administrators can still see these events and investigate them after the fact. 
 
 ## Choosing acceptable risk levels
 
