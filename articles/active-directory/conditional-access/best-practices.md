@@ -51,8 +51,13 @@ All policies are enforced in two phases:
    - During this phase, users may see a certificate prompt if device compliance is part of your Conditional Access policies. This prompt may occur for browser apps when the device operating system is not Windows 10.
    - Phase 1 of policy evaluation occurs for all enabled policies and policies in [report-only mode](concept-conditional-access-report-only.md).
 - Phase 2:
-   - Enforcement: Taking in to account the details gathered in phase 1, request user to satisfy any additional requirements that have not been met.
-   - Apply results to session. 
+   - Enforcement: Conditions that have satisfied any grant controls based on details gathered in phase 1 are applied. Request user to satisfy any additional requirements that have not been met in the following order.
+   1. Multi-factor Authentication
+   2. Approved Client App/App Protection Policy
+	3. Managed Device (Compliant, Hybrid Azure AD Join)
+   4. Custom controls (including TOU)
+	5. Session controls (App Enforced, MCAS, Token Lifetime)
+   - Apply results to session.
    - Phase 2 of policy evaluation occurs for all enabled policies.
 
 ### How are assignments evaluated?
