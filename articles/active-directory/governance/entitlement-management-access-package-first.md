@@ -122,6 +122,8 @@ An *access package* is a bundle of resources that a team or project needs and is
     > When using [dynamic groups](../enterprise-users/groups-create-rule.md) you will not see any other roles available besides owner. This is by design.
     > ![Scenario overview](./media/entitlement-management-access-package-first/dynamic-group-warning.png)
     
+    >[!NOTE]
+    > When you add a user to a Microsoft 365 group, by default a welcome notification is sent to all users who are added to the group. This behavior can be disabled via [Exchange PowerShell](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/Set-UnifiedGroup?view=exchange-ps). If you are staging an Access Package for future use with direct assignments, consider using security groups if you do not want to notify users of their access. If you are using Microsoft 365 groups and have not disabled the welcome notification, be sure to not add direct assignments to Access Packages until you are ready for the users to be informed of their access.
 
 
 12. Click **Next** to open the **Requests** tab.
