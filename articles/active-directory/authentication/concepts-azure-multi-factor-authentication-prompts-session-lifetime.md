@@ -31,7 +31,7 @@ To give your users the right balance of security and ease of use by asking them 
 * If you have Azure AD Premium:
     * Enable single sign-on (SSO) across applications using [managed devices](../devices/overview.md) or [Seamless SSO](../hybrid/how-to-connect-sso.md).
     * If reauthentication is required, use a Conditional Access [sign-in Frequency policy](../conditional-access/howto-conditional-access-session-lifetime.md).
-    * For users that sign in from non-managed devices or mobile device scenarios, use Conditional Access to enable persistent browser sessions and sign-in frequency policies.
+    * For users that sign in from non-managed devices or mobile device scenarios, use Conditional Access to prevent persistent browser sessions and configure sign-in frequency policies.
 * If you have Microsoft 365 apps licenses or the free Azure AD tier:
     * Enable single sign-on (SSO) across applications using [managed devices](../devices/overview.md) or [Seamless SSO](../hybrid/how-to-connect-sso.md).
     * Keep the *Remain signed-in* option enabled and guide your users to accept it.
