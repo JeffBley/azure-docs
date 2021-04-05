@@ -32,7 +32,7 @@ There are two possible reasons why you might need to edit the claims that are is
 
 For information about how to add and edit claims, see [Customizing claims issued in the SAML token for enterprise applications in Azure Active Directory](../develop/active-directory-saml-claims-customization.md).
 
-For B2B collaboration users, mapping NameID and UPN cross-tenant are prevented for security reasons.
+For B2B collaboration users, mapping of attributes accross tenant boundaries is prevented for security reasons. However, you may issue claims from attributes in your own tenant.
 
 ## Next steps
 
