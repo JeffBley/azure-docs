@@ -26,7 +26,7 @@ In the [Azure portal](https://portal.azure.com), you can view or edit the claims
 
 There are two possible reasons why you might need to edit the claims that are issued in the SAML token:
 
-1. The application requires a different set of claim URIs or claim values.
+1. The application requires a different set of claim URIs or claim values. 
 
 2. The application requires the NameIdentifier claim to be something other than the user principal name (UPN) that's stored in Azure AD.
 
